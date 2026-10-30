@@ -1,0 +1,307 @@
+body{
+    background-image: url(beach.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body img {
+    transition: all 0.5s ease;
+}
+
+body img:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    background-color: rgb(151, 217, 232);
+    color: rgb(43, 114, 114);
+    text-align: center;
+    font-family: "creamy_chicken";
+    font-size: xx-large;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: creamy_chicken;
+    src: url('creamy_chicken/Creamy Chicken.otf');
+}
+
+h3 {
+    background-color: rgb(151, 217, 232);
+    width: 600px;
+    color: rgb(43, 114, 114);
+    text-align: center;
+    font-family: 'miracle days';
+    font-size: large;
+}
+
+@font-face {
+    font-family: 'miracle days';
+    src: url('Miracle Days.otf');
+}
+
+.impact-box {
+    width: 100%;
+    max-width: 1100px;
+    height: 400px;
+    background-color: #adf5e5;
+    border: 4px dashed #55bda5;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 25px;
+}
+
+.text-section {
+    padding-left: 20px;
+}
+
+.text-section h2 {
+    margin: 0 0 18px 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: creamy_chicken;
+    background-color: transparent;
+    color: #55bda5;
+}
+
+.text-section p {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'miracle days';
+    text-align: justify;
+    text-indent: 30px;
+    margin-right: 20px;
+    color: #1f5d4e;
+}
+.foto{
+    position:relative;
+    width: 1800px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #f5e8ad;
+}
+.foto img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1,1);
+}
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1,1);
+}   
+
+
+.title {
+    text-align: center;
+    font-family: 'creamy_chicken', sans-serif;
+    color: #437272;
+    background-color: rgb(151, 217, 232);
+    margin-top: 40px;
+}
+
+.impact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.text-box {
+    flex: 1;
+    background-color: #f5e8ad;
+    border: 4px dashed #db835a;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    transition: 0.5s ease;
+    height:350px;
+}
+
+.text-box:hover {
+    background-color: #adf5e5;
+    border-color: #437272;
+    transform: scale(1.05);
+}
+
+.text-box:hover p {
+    color: #1f5d4e;
+}
+
+.text-box p {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'miracle days', sans-serif;
+    color: #723418;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.center-image {
+    flex: 0 0 250px; 
+    text-align: center;
+}
+
+.center-image img {
+    max-width: 220px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.content {
+    flex: 0 0 550px;
+    text-align: center;
+    text-align: justify;
+    text-indent: 30px;
+    background: #adf5e5;
+    border: 4px dashed #55bda5;
+    border-radius: 13px;
+    font-family: miracle days;
+    color: #1f5d4e;
+    font-size: 30;
+    padding: 20px;
+    margin: 5px;
+    transition: 0.5s ease;
+    font-size: 18px;
+}
+
+.content b{ 
+    font-size: 30px;
+}
+
+.content:hover {
+    background: #f5e8ad;
+    color: #723418;
+    border-color: #db835a;
+    transform: scale(1.05);
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: rgb(151, 217, 232);
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: rgb(43, 114, 114);
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+.ngatasin {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 40px;
+} 
+
+.kiri{
+    background-color: #f5e8ad;
+    width: 500px;
+    padding: 20px;
+    font-family: miracle days;
+    color: #723418;
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 4px dashed #db835a;
+    font-size: 21px;
+}
+
+.kiri b{
+    font-size: 30px;
+    transition: 0.5s ease;
+}
+
+.kiri b:hover{
+    font-size:32px;
+    background-color: #adf5e5;
+    color: #437272;
+}
+
+.kiri img{
+    max-width: 250px; 
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 4px solid #adf5e5;
+    margin-left: 110px;
+}
+
+.kanan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.way {
+    background-color: #adf5e5;
+    border: 4px dashed #55ad9d;
+    border-radius: 40px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+    transition: 0.3s ease;
+    font-family: miracle days;
+    color: #1f5d4e;
+}
+
+
+.way:hover {
+    background-color: #91e8d5;
+    transform: scale(1.02);
+}
