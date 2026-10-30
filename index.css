@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+/* header style here*/
+.header{
+    background-color: rgb(158, 252, 242);
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*style for topnav*/
+.topnav{
+    overflow: hidden;
+    background-color:hotpink;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: pink;
+    color:hotpink;
+}
+
+.footer{
+    background-color: turquoise;
+    padding: 15px;
+    text-align: center;
+}
+
+/* heres d style for table ok? */
+
+table,th, td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightblue;
+}
+th,td{
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: pink;
+}
+tr:hover{
+    background-color: white;
+}
+
+/* style pada list
+ol{
+    list-style-type: lower-alpha;
+}
+
+ul{
+    list-style-type: circle;
+} */ 
+
+ol{
+    background-color: pink;
+    border: 2px solid hotpink; 
+    padding: 20px;
+    
+}
+ 
+ul{
+    background-color: rgb(255, 255, 173);
+    border: 2px solid rgb(223, 167, 45); 
+    padding: 20px;
+}
+
+ol li{
+    background-color: rgb(173, 230, 218);
+    border: 2px solid rgb(95, 160, 152);
+    padding: 4px;
+    margin-top: 2px;
+}
+
+ul li{
+    background-color: pink;
+    border: 2px solid hotpink;
+    padding: 4px;
+    margin-top: 2px;
+}
+
+ol ul{
+    border: 0px;
+}
+
+
+ol li:hover{
+    background-color: crimson;
+    color: aliceblue;
+    border-color: rgb(113, 12, 32);
+}
+
+ul li:hover{
+    background-color: crimson;
+    color: aliceblue;
+    border-color: rgb(113, 12, 32);
+}
+
+ul.icons{
+    background-color: rgb(173, 230, 218);
+    border: 2px solid rgb(95, 160, 152);
+}
+
+ul.icons li{
+    background-color: rgb(255, 255, 173);
+    border: 2px solid rgb(223, 167, 45);
+}
+
+ul.icons li:hover{
+    background-color: crimson;
+    color: aliceblue;
+    border-color: rgb(113, 12, 32);
+}

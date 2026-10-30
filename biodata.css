@@ -1,0 +1,244 @@
+body{
+    background-image: url(rainbowdots.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    background-color: rgb(176, 255, 237);
+    color:rgb(53, 138, 109);
+    text-align: center;
+    font-family: "roadster";
+    font-size:xx-large
+}
+/*format font : .otf/.ttf*/
+@font-face {
+    font-family: "roadster";
+    src: url("roadster/ROADSTER.ttf")
+}
+h1{
+    background-color: rgb(241, 157, 193);
+    background-position: center;
+    color:crimson;
+    text-align: center;
+    width: 600px;
+    font-family: "creamy_chicken";
+
+}
+@font-face {
+    font-family: "creamy_chicken";
+    src: url("creamy_chicken/Creamy\ Chicken.otf");
+}
+.biodata{
+    margin: 30px auto ;
+    width: 70%;
+    background-color: rgb(176, 255, 237, 0.89);
+    /* opacity: 89%;  */
+    color:rgb(53, 138, 109);
+    padding: 30px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.foto{
+    position:relative;
+    width: 300px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(223, 46, 82);
+}
+.foto img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1,1);
+}
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1,1);
+}   
+
+.isi{
+    font-family:"miracle_days";
+    font-size: larger;
+}
+@font-face {
+    font-family: "miracle_days";
+    src: url(Miracle\ Days.otf);
+}   
+
+h3{
+    background-color: rgb(241, 157, 193);
+    width: cover;
+    background-position: center;
+    color:crimson; 
+    text-align: center;
+    font-family: "creamy_chicken";
+    font-size: x-large;
+    margin: 0 auto;
+    display: block;
+}
+@font-face {
+    font-family: "creamy_chicken";
+    src: url(creamy_chicken/Creamy\ Chicken.otf);
+}
+
+.hover:hover{
+    border-radius: 20px;
+    border: 3px solid rgb(53, 138, 109);
+}
+
+.films {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.films img{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    border: 13px solid rgb(176, 255, 237);
+    transition: transform 0.6s ease, border-color 0.3 ease;
+}
+
+.films > div:hover img {
+    transform: rotate(6deg) scale(1.1);
+    border-color: rgb(241, 157, 193);
+}
+
+.films img {
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    border: 13px solid rgb(176, 255, 237);
+    transition: border-color 0.3s ease;
+}
+
+.films > div:hover img {
+    border-color: rgb(241, 157, 193);
+}
+
+.films p{
+    text-align: center;
+    font-family: "miracle_days";
+    background-color: rgb(176, 255, 237);
+    color: rgb(53, 138, 109);
+    width: 100;   
+    text-size-adjust: 40px; 
+}
+
+
+@font-face {
+    font-family: "miracle_days";
+    src: url("Miracle\ Days.otf") 
+}
+
+.songs { 
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.songs > div {
+    text-align: center;
+}
+
+
+.songs img {
+      transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+
+.songs > div:hover img {
+    animation: spin 2s linear infinite;
+    transform: scale(1.08);
+}
+
+
+@keyframes spin {
+    from {
+        transform: scale(1.08) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1.08) rotate(360deg);
+    }
+}
+
+.songs p{
+    text-align: center;
+    font-family: "miracle_days";
+    background-color: rgb(176, 255, 237);
+    color: rgb(53, 138, 109);
+    width: 100;   
+    text-size-adjust: 40px; 
+}
+
+.activities {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.activities img{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    border: 13px solid rgb(176, 255, 237);
+    transition: transform 0.3s ease, border-color 0.3 ease;
+}
+
+.activities > div:hover img {
+    transform: rotate(-6deg) scale(1.1);
+    border-color: rgb(241, 157, 193);
+}
+
+.activities img {
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    border: 13px solid rgb(176, 255, 237);
+    transition: border-color 0.6s ease;
+}
+
+.activities > div:hover img {
+    border-color: rgb(241, 157, 193);
+}
+
+.activities p{
+    text-align: center;
+    font-family: "miracle_days";
+    background-color: rgb(176, 255, 237);
+    color: rgb(53, 138, 109);
+    width: 100;   
+    text-size-adjust: 40px; 
+}
